@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "El Marciano",
+    "imgUrl": "booksimgs/Rectangle 194.png",
+    "Author": "Andy Weir",
+    "price": "100",
+    "description": "",
+    "category": "Ciencia Ficción"
+  },
+  {
+    "id": 2,
+    "name": "Don't Make Me Think",
+    "imgUrl": "booksimgs/Rectangle 197.png",
+    "Author": "Steve Krug",
+    "price": "100",
+    "description": "",
+    "category": "Web develpoment"
+  },
+  {
+    "id": 3,
+    "name": "The Design of Everyday Things",
+    "imgUrl": "booksimgs/Rectangle 196.png",
+    "Author": "Don Norman",
+    "price": "100",
+    "description": "",
+    "category": "UX Design"
+  },
+  {
+    "id": 4,
+    "name": "UX for Lean Startups",
+    "imgUrl": "booksimgs/Rectangle 195.png",
+    "Author": "Laura Klein",
+    "price": "100",
+    "description": "",
+    "category": "UX Design"
+  },
+  {
+    "id": 5,
+    "name": "Sprint. How to solve big problems and test new ideas in just five days",
+    "imgUrl": "booksimgs/Rectangle 198.png",
+    "Author": "Jake Knapp",
+    "price": "100",
+    "description": "",
+    "category": "Product Design & Agile"
+  },
+  {
+    "id": 6,
+    "name": "Usabilidad. Deja de sufrir",
+    "imgUrl": "booksimgs/Rectangle 201.png",
+    "Author": "Daniel Torres Burriel",
+    "price": "100",
+    "description": "",
+    "category": "Usabilidad"
+  },
+  {
+    "id": 7,
+    "name": "100 Thing Every Designer Needs to Know About People",
+    "imgUrl": "booksimgs/Rectangle 200.png",
+    "Author": "Susan M. Weinschenk",
+    "price": "100",
+    "description": "",
+    "category": "UX Design"
+  },
+  {
+    "id": 8,
+    "name": "El Pequeño Sabelotodo. Sentido común para los diseñadores",
+    "imgUrl": "booksimgs/Rectangle 199.png",
+    "Author": "Juan Pablo Rojas",
+    "price": "100",
+    "description": "",
+    "category": "UX Design"
+  }
+]

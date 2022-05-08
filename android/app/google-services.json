@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "603449306953",
+    "project_id": "finalcoderhouse",
+    "storage_bucket": "finalcoderhouse.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603449306953:android:e3ce03dfdf788531857498",
+        "android_client_info": {
+          "package_name": "com.miappjlarrondo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603449306953-qjg5rtplfef7fv7aohuvv3bdn2kn5gd9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.miappjlarrondo",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "603449306953-fuscgpelq40h33kkcpvuvchjs85f3kf7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQ9GlfpHtSNtq5yoseJi5EFV40778ZQY4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603449306953-fuscgpelq40h33kkcpvuvchjs85f3kf7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
