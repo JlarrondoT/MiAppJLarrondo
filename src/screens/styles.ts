@@ -56,9 +56,8 @@ export const styles = StyleSheet.create({
   },
   bookDetailContainer: {
     color: '#1F1300',
-    flex: 1,
-    marginTop: 18,
-    justifyContent: 'center',
+    flex: 2,
     alignItems: 'center',
+    alignContent: 'center',
   },
 });

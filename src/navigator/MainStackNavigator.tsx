@@ -13,7 +13,7 @@ const MainStackNavigator = () => {
     <mainStack.Navigator initialRouteName="Login" screenOptions={{ headerShown: false }}>
       <mainStack.Screen name="Login" component={Login} />
       <mainStack.Screen name="Home" component={Home} />
-      <mainStack.Screen name="Book" component={Book} />
+      <mainStack.Screen name="Book" component={Book} options={{ title: 'Libro', headerShown: true }} />
     </mainStack.Navigator>
   );
 };
