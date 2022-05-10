@@ -28,14 +28,19 @@ export const styles = StyleSheet.create({
   loginBox: {
     paddingTop: 20,
     flex: 1,
-    justifyContent: 'center',
+    height: 300,
     alignItems: 'center',
   },
   loginButton: {
-    flex: 2,
+    marginBottom: 20,
     fontSize: 28,
     color: '#CC5803',
     fontWeight: 'bold',
+  },
+  createAccountButton: {
+    fontSize: 18,
+    color: '#1F1300',
+    fontWeight: '200',
   },
   homeContainer: {
     flex: 1,
