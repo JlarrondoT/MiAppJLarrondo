@@ -1,18 +1,44 @@
 import React from 'react';
-import { View, Text, TextInput, TouchableOpacity, Image } from 'react-native';
+import { View, Text, TouchableOpacity, Image } from 'react-native';
 import { styles } from './styles';
 import { connect, useDispatch, useSelector } from 'react-redux';
 import BookAction from '../store/actions/book.action';
 import { Ebook } from './Home';
-import { Rating, AirbnbRating } from 'react-native-ratings';
+import { AirbnbRating } from 'react-native-ratings';
+import { Player } from '../audioplayer/player';
 
 const Book = (input: { navigation: any }) => {
+  const [playing, setPlaying] = React.useState(false);
+  const [paused, setPaused] = React.useState(false);
   const dispatch = useDispatch();
   const activeBook: Ebook = useSelector((state: any) => state.activeBook);
   React.useEffect(() => {
     dispatch(BookAction.loadBook());
     console.log(activeBook);
   });
+
+  const handlePlay = () => {
+    if (!playing) {
+      Player.play(activeBook.audioUrl);
+      setPlaying(true);
+    } else {
+      if (!paused) {
+        Player.pause();
+        setPaused(true);
+      } else {
+        Player.resume();
+        setPaused(false);
+      }
+    }
+  };
+
+  const handleIcon = () => {
+    if (!playing || paused) {
+      return require('../../images/playIcon.png');
+    } else {
+      return require('../../images/pauseIcon.png');
+    }
+  };
 
   return (
     <View style={{ flex: 1, flexDirection: 'column', marginTop: 18 }}>
@@ -24,7 +50,10 @@ const Book = (input: { navigation: any }) => {
       <View style={{ flex: 3 }}>
         <View style={{ flexDirection: 'row' }}>
           <View style={{ flex: 2 }}>
-            <TouchableOpacity style={{ display: 'flex', alignItems: 'center', borderRadius: 100 }}>
+            <TouchableOpacity
+              style={{ display: 'flex', alignItems: 'center', borderRadius: 100 }}
+              onPress={() => handlePlay()}
+            >
               <Image
                 key={activeBook.id.toString()}
                 source={{ uri: activeBook.imgUrl }}
@@ -36,11 +65,7 @@ const Book = (input: { navigation: any }) => {
                   position: 'relative',
                 }}
               />
-              <Image
-                key="playIcon"
-                source={require('../../images/playIcon.png')}
-                style={{ marginTop: -95, marginLeft: 10 }}
-              />
+              <Image key="playIcon" source={handleIcon()} style={{ marginTop: -95, marginLeft: 6 }} />
             </TouchableOpacity>
           </View>
           <View style={{ flex: 2 }}>
