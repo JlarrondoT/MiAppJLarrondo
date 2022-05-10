@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux';
 import BookAction from '../store/actions/book.action';
 
 export type Ebook = {
+  audioUrl: string;
   id: number;
   name: string;
   imgUrl: string;
