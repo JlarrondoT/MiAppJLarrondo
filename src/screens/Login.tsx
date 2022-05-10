@@ -11,7 +11,6 @@ const Login = (input: { navigation: any }) => {
     if (type === 'LOGIN') {
       login().then(
         (data) => {
-          console.log(data);
           if (data?.registered) {
             input.navigation.navigate('Home');
           } else {
@@ -26,7 +25,7 @@ const Login = (input: { navigation: any }) => {
     } else {
       createAccount().then(
         (data) => {
-          if (data) {
+          if (data?.idToken) {
             input.navigation.navigate('Home');
           } else {
             Alert.alert('Error', 'Error al crear el usuario');

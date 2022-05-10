@@ -17,6 +17,7 @@ export const styles = StyleSheet.create({
     marginBottom: 50,
   },
   textInput: {
+    color: '#1F1300',
     borderRadius: 20,
     borderColor: '#CC5803',
     borderStyle: 'solid',
@@ -40,7 +41,10 @@ export const styles = StyleSheet.create({
   createAccountButton: {
     fontSize: 18,
     color: '#1F1300',
-    fontWeight: '200',
+    fontWeight: '400',
+    textDecorationLine: 'underline',
+    textDecorationStyle: 'solid',
+    textDecorationColor: '#CC5803',
   },
   homeContainer: {
     flex: 1,
