@@ -3,10 +3,10 @@
 ## Contexto
 
 este es un proyecto pequeño, pero que hace uso de varias cosas vistas en el curso de React Native de Coderhouse, tales como:
-  1.- Redux
-  2.- KeyboardAvoidingView
-  3.- Firebase (Authentication, Realtime Database y Storage)
-  4.- NativeStackNavigatior.
+- Redux
+- KeyboardAvoidingView
+- Firebase (Authentication, Realtime Database y Storage)
+- NativeStackNavigatior.
 
 Para levantar el proyecto:
 ```bash
